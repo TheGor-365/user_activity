@@ -31,3 +31,7 @@
 
 en:
   hello: "Hello world"
+  public_activity:
+    create: "Created this post"
+    update: "Updated this post"
+    destroy: "Deleted this post"
