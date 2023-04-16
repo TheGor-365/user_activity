@@ -2,7 +2,7 @@
   Wellcome
 </h1>
 
-<%= @activities.each do |activity| %>
+<% @activities.each do |activity| %>
   <% if activity.trackable_type == 'Post' %>
 
     <div class="border rounded p-5">
@@ -14,7 +14,7 @@
         <% post = activity.trackable %>
         <% owner = activity.owner %>
 
-        <% if post.nill? %>
+        <% if post.nil? %>
           <% next %>
         <% end %>
 
